@@ -1,5 +1,4 @@
-package com.company;
-import java.util.List;
+package com.basis;
 import java.util.Scanner;
 
 public class QuickSort {
@@ -25,10 +24,6 @@ public class QuickSort {
                 q[j] = temp;
             }
         }
-        System.out.println("第一轮排序后");
-        for (int z = 0;z < ListSize;z ++) {
-            System.out.print(nums[z]);
-        }
         //递归排序左边
         QuickSort(q, l, j);
         //递归排序右边
@@ -38,17 +33,14 @@ public class QuickSort {
         Scanner sc = new Scanner(System.in);
         ListSize = sc.nextInt();
         nums = new int[ListSize];
-        String[] strs = sc.next().trim().split(",");
+        sc.nextLine();
+        String[] strs = sc.nextLine().trim().split(" ");
         for (int i = 0;i < ListSize;i ++) {
             nums[i] = Integer.parseInt(strs[i]);
         }
-        for (int i = 0;i < ListSize;i ++) {
-            System.out.println(nums[i]);
-        }
         QuickSort(nums,0,ListSize-1);
-        System.out.println("排序后");
         for (int i = 0;i < ListSize;i ++) {
-            System.out.print(nums[i]);
+            System.out.print(nums[i]+" ");
         }
     }
 }

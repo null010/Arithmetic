@@ -1,7 +1,5 @@
-package com.company;
+package com.basis;
 
-import java.util.Collection;
-import java.util.Collections;
 import java.util.Scanner;
 
 /**
@@ -48,11 +46,6 @@ public class QuickSelect {
         for (int i = 0; i < strings.length; i++) {
             ints[i] = Integer.parseInt(strings[i]);
         }
-        // System.out.println("k:"+k+"listSize:"+listSize);
-        // for (int n:ints) {
-        //     System.out.println(n);
-        // }
-
         System.out.println(QuickSelect(ints, 0, ints.length - 1, k));
     }
 

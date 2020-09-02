@@ -1,4 +1,4 @@
-package stucture;
+package com.stucture;
 
 import java.util.Scanner;
 
